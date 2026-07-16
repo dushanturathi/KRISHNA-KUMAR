@@ -1,0 +1,18 @@
+vim hpa.yaml 
+    2  ls
+    3  vim hpa.yaml 
+    4  kubectl apply -f .
+    5  kubectl get pod
+    6  ls
+    7  kubectl get pod
+    8  kubectl exec -it deployapp-7b7d5bc67c-9mjr4 -- bash 
+   11  kubectl edit deployment metrics-server -n kube-system
+   12  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+   13  kubectl edit deployment metrics-server -n kube-system
+   14  kubectl get pod
+   16  apt update 
+   18  kubectl apply -f .
+   20  kubectl get pod
+   21  kubectl exec -it deployapp-7b7d5bc67c-tdclt -- bash 
+   22  apt update
+   23  apt install docker.io
